@@ -10,3 +10,10 @@ run:
     - pip3 install pipenv
     - pipenv install
   command: python3 server.py
+  network:
+    port: 8000
+  env:
+    - name: PORT
+      value: "8000"
+
+
